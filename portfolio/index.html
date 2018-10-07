@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css" />
+  <!-- <script src="main.js"></script> -->
+</head>
+<body>
+  <aside>
+    <figure>
+      <div id="avatar"></div>
+      <figcaption>ZZAutumn</figcaption>
+    </figure>
+    <img src="./images/menu.svg" >
+    <nav>
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">ABOUT ME</a></li>
+        <li><a href="#">PORTFOLIO</a></li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+    </nav>
+  </aside>
+  <main>
+    <h1>I’m a frontend web developer!</h1>
+    <p>Today I learn the UX design. It’s interesting!</p>
+    <a href="#" class="cta">My Portfolio</a>
+  </main>
+
+  <script>
+    (function () {
+      const menu = document.querySelector('ul'),
+          menuLink = document.querySelector('img'); 
+      menuLink.addEventListener('click', function (e) {
+        menu.classList.toggle('active');
+        e.preventDefault();
+      })
+    })();
+  </script>
+</body>
+</html>
